@@ -1,0 +1,48 @@
+.section-stats {
+    display: flex;
+    @include quicksand;
+
+    &__left,
+    &__right {
+        padding: $base*16 $base*22;
+        flex-basis: 50%;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 48px;
+        font-weight: $fw-regular;
+        line-height: 1.7;
+        letter-spacing: 1.44px;
+    }
+
+    .text {
+        margin: 0;
+        max-width: 260px;
+
+        font-size: 18px;
+        font-weight: $fw-medium;
+        line-height: 1.3;
+        letter-spacing: 0.54px;
+    }
+
+    &__left {
+        text-align: right;
+        background: linear-gradient(195deg, #6888FF 0%, #5E80FF 100%);
+        color: #FFF;
+
+        .text {
+            margin-left: auto;
+        }
+    }
+
+    &__right {
+        background: linear-gradient(164deg, #E9EFFF 0%, #E0E9FF 100%);
+        color: #5E80FF;
+    }
+
+    .image {
+        margin-bottom: $base * 6;
+    }
+
+}

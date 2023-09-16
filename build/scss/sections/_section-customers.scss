@@ -1,0 +1,19 @@
+.section-customers {
+    .section-inner {
+        padding-top: $padding-vertical-sm;
+        padding-bottom: $padding-vertical-sm;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .link {
+            color: #D6DAE5;
+
+            &--active {
+                color: #5982E7;
+            }
+        }
+    }
+
+}

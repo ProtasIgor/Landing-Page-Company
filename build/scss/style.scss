@@ -1,0 +1,349 @@
+@import '_vars.scss';
+@import '_mixin.scss';
+
+@import 'sections/_section-header.scss';
+@import 'sections/_section-hero-image.scss';
+@import 'sections/_section-customers.scss';
+@import 'sections/_section-plan-and-manage.scss';
+@import 'sections/_section-features.scss';
+@import 'sections/_section-stats.scss';
+@import 'sections/_section-blog.scss';
+@import 'sections/_section-quotes.scss';
+@import 'sections/_section-get-started.scss';
+@import 'sections/_section-faq.scss';
+@import 'sections/_section-newsletter.scss';
+@import 'sections/_section-footer.scss';
+
+
+body {
+    @include roboto;
+    color: #8D96BD;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include quicksand;
+    margin: 0;
+    padding: 0;
+    font-weight: $fw-regular;
+    color: #3D4F9F;
+}
+
+h1,
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    @include roboto;
+    font-size: 10px;
+}
+
+.text-center {
+    text-align: center;
+    text-align-last: center;
+}
+
+.section-outer {
+    border-bottom: 1px solid $color-devided;
+}
+
+.section-inner {
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: $padding-vertical;
+    padding-bottom: $padding-vertical;
+
+    &--vide {
+        max-width: 1200px;
+
+    }
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    width: $base * 6;
+    height: $base * 6;
+    display: inline-block;
+    background-color: #5E81FE;
+    border-radius: 50%;
+}
+
+.btn-wrapper {
+    margin-left: $base * 11;
+}
+
+.btn-group {
+    display: inline-flex;
+
+    .btn:nth-child(1) {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .btn:nth-child(2) {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+.btn {
+    padding: $base*3 $base*4;
+    @include quicksand;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: $transition;
+    cursor: pointer;
+
+    &--primary {
+        background-color: #D2E1FF;
+        color: #3A79FF;
+
+        &:hover {
+            background-color: darken($color: #D2E1FF, $amount: 4%);
+
+        }
+    }
+
+    &--secondary {
+        background-color: #4C85FF;
+        color: #fff;
+
+        &:hover {
+            background-color: darken($color: #4C85FF, $amount: 4%);
+
+        }
+    }
+
+    &--third {
+        background-color: #FFD7D7;
+        color: #D43F3F;
+
+        &:hover {
+            background-color: darken($color: #FFD7D7, $amount: 4%);
+
+        }
+    }
+
+    &--no-bg {
+        border: 1px solid #D1D1E4;
+        background-color: transparent;
+        color: #ADB4D2;
+
+        &:hover {
+            background-color: #fff;
+
+        }
+    }
+}
+
+.nav {
+    margin-left: $base * 18;
+}
+
+.nav-wrapper {
+    @include list-reset;
+    display: flex;
+
+    &__item {
+        &+& {
+            margin-left: $base * 10;
+        }
+    }
+
+    &__link {
+        @include quicksand;
+        font-size: $fs-sm;
+        font-weight: $fw-medium;
+
+        text-transform: capitalize;
+        text-decoration: none;
+        text-shadow: 0px 0px 5px #E6E6E6;
+        color: $color-primary;
+        transition: $transition;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+        &--active {
+            font-weight: $fw-bold;
+            color: $color-secondary;
+        }
+    }
+}
+
+.socials {
+    margin-left: auto;
+}
+
+.socials-wrapper {
+    @include list-reset;
+    display: flex;
+
+    &__item {
+        &+& {
+            margin-left: $base * 10;
+        }
+    }
+
+    &__link {
+        @include quicksand;
+        font-size: .8rem;
+        font-weight: $fw-medium;
+
+        vertical-align: middle;
+        color: $color-primary;
+        transition: $transition;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+.svg-Group11-dims {
+    width: 9px;
+    height: 17px;
+}
+
+.svg-Group7-dims {
+    width: 18px;
+    height: 14px;
+}
+
+.svg-Group8-dims {
+    width: 17px;
+    height: 14px;
+}
+
+.svg-Vector-dims {
+    width: 15px;
+    height: 13px;
+}
+
+.svg-Group11-dims {
+    width: 9px;
+    height: 17px;
+}
+
+.svg-Group7-dims {
+    width: 18px;
+    height: 14px;
+}
+
+.svg-Group8-dims {
+    width: 17px;
+    height: 14px;
+}
+
+.svg-Vector-dims {
+    width: 15px;
+    height: 13px;
+}
+
+.svg-apple-watch-dims {
+    width: 117px;
+    height: 25px;
+}
+
+.svg-atlassian-dims {
+    width: 117px;
+    height: 25px;
+}
+
+.svg-audi-dims {
+    width: 117px;
+    height: 29px;
+}
+
+.svg-bitbucket-dims {
+    width: 117px;
+    height: 29px;
+}
+
+.svg-button-dims {
+    width: 52px;
+    height: 52px;
+}
+
+.svg-button-arrow-dims {
+    width: 16px;
+    height: 10px;
+}
+
+.svg-chats-dims {
+    width: 69px;
+    height: 69px;
+}
+
+.svg-events-dims {
+    width: 69px;
+    height: 69px;
+}
+
+.svg-facebook-dims {
+    width: 117px;
+    height: 23px;
+}
+
+.svg-files-dims {
+    width: 69px;
+    height: 69px;
+}
+
+.svg-overview-dims {
+    width: 69px;
+    height: 69px;
+}
+
+.svg-stats-left-dims {
+    width: 75px;
+    height: 66px;
+}
+
+.svg-stats-right-dims {
+    width: 67px;
+    height: 68px;
+}
+
+.dots {
+    @include list-reset;
+    display: flex;
+
+    &__item {
+        width: $base * 2;
+        height: $base * 2;
+        background-color: #D1D6E3;
+        border-radius: 50%;
+        transition: $transition;
+
+        &+& {
+            margin-left: $base * 3;
+        }
+
+        &--active {
+            background-color: #5283FF;
+        }
+    }
+}
